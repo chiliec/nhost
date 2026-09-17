@@ -158,7 +158,7 @@ subscription getUnifiedDeploymentsSub(
 ) {
   unifiedDeployments(
     where: { appId: { _eq: $appId } }
-    order_by: { startedAt: desc }
+    order_by: { createdAt: desc }
     limit: $limit
     offset: $offset
   ) {

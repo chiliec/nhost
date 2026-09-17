@@ -35788,7 +35788,7 @@ export const GetUnifiedDeploymentsSubDocument = gql`
     subscription getUnifiedDeploymentsSub($appId: uuid!, $limit: Int!, $offset: Int!) {
   unifiedDeployments(
     where: {appId: {_eq: $appId}}
-    order_by: {startedAt: desc}
+    order_by: {createdAt: desc}
     limit: $limit
     offset: $offset
   ) {
